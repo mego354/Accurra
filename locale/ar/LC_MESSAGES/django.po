@@ -1,0 +1,424 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-01 14:57+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\main\views.py:22
+msgid "Accurra - We Build Apps That Don't Just Work... They Flex"
+msgstr "أكورا - بنبني تطبيقات مش بس تشتغل... بتفليكس"
+
+#: .\main\views.py:23
+msgid "Accurra"
+msgstr "أكورا"
+
+#: .\templates\base.html:733
+msgid "Home"
+msgstr "الرئيسية"
+
+#: .\templates\base.html:736
+msgid "Services"
+msgstr "الخدمات"
+
+#: .\templates\base.html:739
+msgid "Projects"
+msgstr "المشاريع"
+
+#: .\templates\base.html:742
+msgid "Why Us"
+msgstr "ليه احنا"
+
+#: .\templates\base.html:745
+msgid "Contact"
+msgstr "تواصل معانا"
+
+#: .\templates\base.html:777
+msgid "Building the future, one flex at a time."
+msgstr "بنبني المستقبل، فليكس واحد في المرة."
+
+#: .\templates\base.html:778
+msgid "Made with"
+msgstr "مصنوع بـ"
+
+#: .\templates\base.html:778
+msgid "and lots of caffeine."
+msgstr "وكمية كبيرة من الكافيين."
+
+#: .\templates\main\home.html:13
+msgid "We build apps that don't just work… they flex."
+msgstr "بنبني تطبيقات مش بس تشتغل... بتفليكس."
+
+#: .\templates\main\home.html:16
+msgid ""
+"Websites, mobile apps, desktop tools – all powered by AI, crafted for humans."
+msgstr ""
+"مواقع، تطبيقات موبايل، أدوات سطح المكتب – كلها مدعومة بالذكاء الاصطناعي، "
+"مصممة للبشر."
+
+#: .\templates\main\home.html:22
+msgid "Let's Build Something"
+msgstr "يلا نبني حاجة"
+
+#: .\templates\main\home.html:26
+msgid "See Our Work"
+msgstr "شوف شغلنا"
+
+#: .\templates\main\home.html:43
+msgid "What We Cook Up"
+msgstr "إيه اللي بنعمله"
+
+#: .\templates\main\home.html:44
+msgid ""
+"From slick e-commerce to AI-powered automation – we build tech that actually "
+"makes sense."
+msgstr ""
+"من التجارة الإلكترونية السلسة إلى الأتمتة المدعومة بالذكاء الاصطناعي – بنبني "
+"تكنولوجيا منطقية فعلاً."
+
+#: .\templates\main\home.html:54
+msgid "E-Commerce Platforms"
+msgstr "منصات التجارة الإلكترونية"
+
+#: .\templates\main\home.html:57
+msgid ""
+"From car parts to fashion drops, we design slick stores that sell. Complete "
+"with secure checkout, inventory management, and admin dashboards that don't "
+"make you cry."
+msgstr ""
+"من قطع السيارات لموضة الأزياء، بنصمم متاجر أنيقة تبيع فعلاً. مع دفع آمن، "
+"إدارة مخزون، ولوحات تحكم مش هتخليك تبكي."
+
+#: .\templates\main\home.html:60
+msgid "Live & Flexing"
+msgstr "عايش وبيفليكس"
+
+#: .\templates\main\home.html:70
+msgid "Smart Factory Systems"
+msgstr "أنظمة المصانع الذكية"
+
+#: .\templates\main\home.html:71
+msgid ""
+"Factory management tools that actually keep up with production. Track "
+"models, manage packaging, generate reports – because spreadsheets are so "
+"last decade."
+msgstr ""
+"أدوات إدارة المصانع اللي فعلاً بتواكب الإنتاج. تتبع الموديلات، إدارة التغليف، "
+"توليد التقارير – لأن الإكسل بقى من العصر الحجري."
+
+#: .\templates\main\home.html:72
+msgid "Production Ready"
+msgstr "جاهز للإنتاج"
+
+#: .\templates\main\home.html:81
+msgid "AI Testing Bots"
+msgstr "روبوتات اختبار الذكاء الاصطناعي"
+
+#: .\templates\main\home.html:82
+msgid ""
+"Robots that test your Android apps so you don't have to. Automated APK "
+"testing with real-time feedback – because life's too short to click buttons "
+"manually."
+msgstr ""
+"روبوتات بتختبر تطبيقات الأندرويد عشان مش تضطر تعمل كده. اختبار تلقائي للـ APK "
+"مع ردود فعل فورية – لأن الحياة قصيرة عشان تضغط أزرار باليد."
+
+#: .\templates\main\home.html:83
+msgid "Automated AF"
+msgstr "تلقائي تماماً"
+
+#: .\templates\main\home.html:92
+msgid "Accessibility & AI"
+msgstr "إمكانية الوصول والذكاء الاصطناعي"
+
+#: .\templates\main\home.html:93
+msgid ""
+"Bridging worlds with gesture-to-voice translation for the deaf. Real-time AI "
+"that speaks with hands and talks with gestures – tech that actually matters."
+msgstr ""
+"ربط العوالم بترجمة الإيماءات للصوت للصم. ذكاء اصطناعي فوري بيحكي بالإيدين "
+"وبيتكلم بالإيماءات – تكنولوجيا مهمة فعلاً."
+
+#: .\templates\main\home.html:94
+msgid "Changing Lives"
+msgstr "بتغير الحياة"
+
+#: .\templates\main\home.html:103
+msgid "Campus Tools"
+msgstr "أدوات الحرم الجامعي"
+
+#: .\templates\main\home.html:104
+msgid ""
+"Attendance tracking that's faster, smarter, and cheat-proof. QR codes, "
+"device detection, automated reporting – making campus life less of a hassle."
+msgstr ""
+"تتبع الحضور الأسرع والأذكى والأمان من الغش. رموز QR، كشف الأجهزة، تقارير "
+"تلقائية – نجعل الحياة الجامعية أسهل."
+
+#: .\templates\main\home.html:105
+msgid "Campus Approved"
+msgstr "معتمد جامعياً"
+
+#: .\templates\main\home.html:114
+msgid "Business Dashboards"
+msgstr "لوحات تحكم الأعمال"
+
+#: .\templates\main\home.html:115
+msgid ""
+"Inventory + sales charts that make sense, not headaches. Dynamic searches, "
+"graphical analysis, and clean UIs that your team will actually want to use."
+msgstr ""
+"مخزون + رسوم بيانية للمبيعات منطقية، مش صداع. بحث ديناميكي، تحليل بياني، "
+"وواجهات نظيفة فريقك هيريد يستخدمها فعلاً."
+
+#: .\templates\main\home.html:116
+msgid "Data-Driven"
+msgstr "مدعوم بالبيانات"
+
+#: .\templates\main\home.html:127
+msgid "Coming Soon"
+msgstr "قريباً"
+
+#: .\templates\main\home.html:128
+msgid ""
+"Mobile & desktop apps across every screen. We're cooking up native iOS, "
+"Android, and desktop solutions that'll make your current apps look ancient."
+msgstr ""
+"تطبيقات موبايل وسطح المكتب على كل شاشة. بنطبخ حلول iOS و Android وسطح "
+"المكتب الأصلية اللي هتخلي تطبيقاتك الحالية تبان قديمة."
+
+#: .\templates\main\home.html:129
+msgid "In The Kitchen"
+msgstr "في المطبخ"
+
+#: .\templates\main\home.html:140
+msgid "Featured Flexes"
+msgstr "الفليكسات المميزة"
+
+#: .\templates\main\home.html:141
+msgid ""
+"Real projects, real results, real impact. Check out what we've been cooking."
+msgstr ""
+"مشاريع حقيقية، نتائج حقيقية، تأثير حقيقي. شوف إيه اللي كنا بنعمله."
+
+#: .\templates\main\home.html:148
+msgid "Tailwind Car App"
+msgstr "تطبيق السيارات Tailwind"
+
+#: .\templates\main\home.html:149
+msgid "E-commerce on wheels"
+msgstr "تجارة إلكترونية على عجلات"
+
+#: .\templates\main\home.html:152
+msgid ""
+"Full-stack car parts e-commerce with secure authentication, shopping cart, "
+"and responsive Tailwind UI. Because selling car parts should be as smooth as "
+"driving."
+msgstr ""
+"تجارة إلكترونية كاملة لقطع السيارات مع مصادقة آمنة، عربة تسوق، وواجهة Tailwind "
+"متجاوبة. لأن بيع قطع السيارات لازم يكون سلس زي القيادة."
+
+#: .\templates\main\home.html:154
+msgid "Check Demo"
+msgstr "شوف الديمو"
+
+#: .\templates\main\home.html:163
+msgid "Production & Packaging"
+msgstr "الإنتاج والتغليف"
+
+#: .\templates\main\home.html:164
+msgid "Factory workflows made simple"
+msgstr "سير عمل المصانع مبسط"
+
+#: .\templates\main\home.html:167
+msgid ""
+"Django-powered factory management system with model tracking, quantity "
+"management, and PDF reporting. Making industrial processes actually "
+"manageable."
+msgstr ""
+"نظام إدارة مصانع مدعوم بـ Django مع تتبع الموديلات، إدارة الكميات، وتقارير PDF. "
+"نجعل العمليات الصناعية قابلة للإدارة فعلاً."
+
+#: .\templates\main\home.html:169
+msgid "View Code"
+msgstr "شوف الكود"
+
+#: .\templates\main\home.html:178
+msgid "APK Automation"
+msgstr "أتمتة APK"
+
+#: .\templates\main\home.html:179
+msgid "Robots testing your apps"
+msgstr "روبوتات بتختبر تطبيقاتك"
+
+#: .\templates\main\home.html:182
+msgid ""
+"Appium-powered automated testing for Android apps with real-time feedback "
+"and emulator integration. Testing apps so you can focus on building them."
+msgstr ""
+"اختبار تلقائي مدعوم بـ Appium لتطبيقات Android مع ردود فعل فورية وتكامل "
+"المحاكي. نختبر التطبيقات عشان تركز في بنائها."
+
+#: .\templates\main\home.html:184
+msgid "See Demo"
+msgstr "شوف الديمو"
+
+#: .\templates\main\home.html:193
+msgid "Hand Gesture Project"
+msgstr "مشروع إيماءات اليد"
+
+#: .\templates\main\home.html:194
+msgid "AI speaking with hands"
+msgstr "ذكاء اصطناعي بيحكي بالإيدين"
+
+#: .\templates\main\home.html:197
+msgid ""
+"TensorFlow-powered gesture recognition with real-time translation between "
+"gestures, text, and voice. Bridging communication gaps with cutting-edge AI."
+msgstr ""
+"تعرف على الإيماءات مدعوم بـ TensorFlow مع ترجمة فورية بين الإيماءات والنص "
+"والصوت. ربط فجوات التواصل بأحدث الذكاء الاصطناعي."
+
+#: .\templates\main\home.html:199
+msgid "Experience It"
+msgstr "جربه"
+
+#: .\templates\main\home.html:208
+msgid "Attendance System"
+msgstr "نظام الحضور"
+
+#: .\templates\main\home.html:209
+msgid "Campus attendance, zero hassle"
+msgstr "حضور جامعي، بدون تعقيد"
+
+#: .\templates\main\home.html:212
+msgid ""
+"Smart attendance tracking with QR codes, device detection, and automated "
+"reporting. Making campus attendance as easy as showing up."
+msgstr ""
+"تتبع ذكي للحضور مع رموز QR، كشف الأجهزة، وتقارير تلقائية. نجعل الحضور "
+"الجامعي سهل زي الحضور نفسه."
+
+#: .\templates\main\home.html:214
+msgid "Try It Out"
+msgstr "جربه"
+
+#: .\templates\main\home.html:223
+msgid "Al-Asel Store"
+msgstr "متجر العسل"
+
+#: .\templates\main\home.html:224
+msgid "Smart dashboards for smart shops"
+msgstr "لوحات تحكم ذكية للمتاجر الذكية"
+
+#: .\templates\main\home.html:227
+msgid ""
+"Complete store management with inventory tracking, sales analysis, and "
+"beautiful charts. Turning retail chaos into organized profit."
+msgstr ""
+"إدارة متجر كاملة مع تتبع المخزون، تحليل المبيعات، ورسوم بيانية جميلة. تحويل "
+"فوضى البيع بالتجزئة إلى ربح منظم."
+
+#: .\templates\main\home.html:229
+msgid "Explore Demo"
+msgstr "استكشف الديمو"
+
+#: .\templates\main\home.html:242
+msgid "Why We're Different"
+msgstr "ليه احنا مختلفين"
+
+#: .\templates\main\home.html:243
+msgid ""
+"We don't just code, we craft experiences that make users smile and "
+"businesses thrive."
+msgstr ""
+"مش بنبرمج بس، بنصنع تجارب تخلي المستخدمين يبتسموا والأعمال تزدهر."
+
+#: .\templates\main\home.html:251
+msgid "We don't just code, we craft"
+msgstr "مش بنبرمج بس، بنصنع"
+
+#: .\templates\main\home.html:252
+msgid ""
+"Every line of code is written with purpose. Every pixel placed with "
+"intention. We build software that feels like art."
+msgstr ""
+"كل سطر كود مكتوب بقصد. كل بكسل موضوع بنية. بنبني برمجيات تحس إنها فن."
+
+#: .\templates\main\home.html:259
+msgid "Designs that slap, dashboards that don't lie"
+msgstr "تصميمات تفلع، لوحات تحكم مش بتكذب"
+
+#: .\templates\main\home.html:260
+msgid ""
+"Our UIs are clean, modern, and actually usable. Our data visualizations tell "
+"the truth in beautiful ways."
+msgstr ""
+"واجهاتنا نظيفة وعصرية وقابلة للاستخدام فعلاً. رسومنا البيانية تقول الحقيقة "
+"بطرق جميلة."
+
+#: .\templates\main\home.html:267
+msgid "AI that feels human"
+msgstr "ذكاء اصطناعي يحس إنه بشري"
+
+#: .\templates\main\home.html:268
+msgid ""
+"We build intelligent systems that augment human capabilities, not replace "
+"human connection. Tech with empathy."
+msgstr ""
+"بنبني أنظمة ذكية بتقوي قدرات البشر، مش بتستبدل التواصل البشري. تكنولوجيا "
+"بإحساس."
+
+#: .\templates\main\home.html:275
+msgid "Tech that actually solves problems"
+msgstr "تكنولوجيا تحل مشاكل فعلاً"
+
+#: .\templates\main\home.html:276
+msgid ""
+"No fluff, no gimmicks. We build solutions that address real pain points and "
+"deliver measurable results."
+msgstr ""
+"بدون زعيق، بدون حيل. بنبني حلول تتعامل مع نقاط الألم الحقيقية وتوصل نتائج "
+"قابلة للقياس."
+
+#: .\templates\main\home.html:288
+msgid "Wanna team up? Let's cook."
+msgstr "عايز نشتغل مع بعض؟ يلا نشتغل."
+
+#: .\templates\main\home.html:289
+msgid ""
+"Ready to build something that doesn't just work, but flexes? Hit us up and "
+"let's turn your vision into digital magic."
+msgstr ""
+"مستعد تبني حاجة مش بس تشتغل، لكن تفليكس؟ تواصل معانا وخلينا نحول رؤيتك "
+"لسحر رقمي."
+
+#: .\templates\main\home.html:294
+msgid "Drop us a line"
+msgstr "اكتبلنا رسالة"
+
+#: .\templates\main\home.html:298
+msgid "Let's chat"
+msgstr "يلا نتكلم"
+
+#: .\templates\main\home.html:302
+msgid "Check our code"
+msgstr "شوف كودنا"
+
+#: .\templates\main\home.html:308
+msgid "Usually respond within 24 hours"
+msgstr "عادي نرد خلال 24 ساعة"

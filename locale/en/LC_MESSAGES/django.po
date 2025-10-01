@@ -1,0 +1,382 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-01 14:59+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\main\views.py:22
+msgid "Accurra - We Build Apps That Don't Just Work... They Flex"
+msgstr ""
+
+#: .\main\views.py:23
+msgid "Accurra"
+msgstr ""
+
+#: .\templates\base.html:733
+msgid "Home"
+msgstr ""
+
+#: .\templates\base.html:736
+msgid "Services"
+msgstr ""
+
+#: .\templates\base.html:739
+msgid "Projects"
+msgstr ""
+
+#: .\templates\base.html:742
+msgid "Why Us"
+msgstr ""
+
+#: .\templates\base.html:745
+msgid "Contact"
+msgstr ""
+
+#: .\templates\base.html:777
+msgid "Building the future, one flex at a time."
+msgstr ""
+
+#: .\templates\base.html:778
+msgid "Made with"
+msgstr ""
+
+#: .\templates\base.html:778
+msgid "and lots of caffeine."
+msgstr ""
+
+#: .\templates\main\home.html:13
+msgid "We build apps that don't just work… they flex."
+msgstr ""
+
+#: .\templates\main\home.html:16
+msgid ""
+"Websites, mobile apps, desktop tools – all powered by AI, crafted for humans."
+msgstr ""
+
+#: .\templates\main\home.html:22
+msgid "Let's Build Something"
+msgstr ""
+
+#: .\templates\main\home.html:26
+msgid "See Our Work"
+msgstr ""
+
+#: .\templates\main\home.html:43
+msgid "What We Cook Up"
+msgstr ""
+
+#: .\templates\main\home.html:44
+msgid ""
+"From slick e-commerce to AI-powered automation – we build tech that actually "
+"makes sense."
+msgstr ""
+
+#: .\templates\main\home.html:54
+msgid "E-Commerce Platforms"
+msgstr ""
+
+#: .\templates\main\home.html:57
+msgid ""
+"From car parts to fashion drops, we design slick stores that sell. Complete "
+"with secure checkout, inventory management, and admin dashboards that don't "
+"make you cry."
+msgstr ""
+
+#: .\templates\main\home.html:60
+msgid "Live & Flexing"
+msgstr ""
+
+#: .\templates\main\home.html:70
+msgid "Smart Factory Systems"
+msgstr ""
+
+#: .\templates\main\home.html:71
+msgid ""
+"Factory management tools that actually keep up with production. Track "
+"models, manage packaging, generate reports – because spreadsheets are so "
+"last decade."
+msgstr ""
+
+#: .\templates\main\home.html:72
+msgid "Production Ready"
+msgstr ""
+
+#: .\templates\main\home.html:81
+msgid "AI Testing Bots"
+msgstr ""
+
+#: .\templates\main\home.html:82
+msgid ""
+"Robots that test your Android apps so you don't have to. Automated APK "
+"testing with real-time feedback – because life's too short to click buttons "
+"manually."
+msgstr ""
+
+#: .\templates\main\home.html:83
+msgid "Automated AF"
+msgstr ""
+
+#: .\templates\main\home.html:92
+msgid "Accessibility & AI"
+msgstr ""
+
+#: .\templates\main\home.html:93
+msgid ""
+"Bridging worlds with gesture-to-voice translation for the deaf. Real-time AI "
+"that speaks with hands and talks with gestures – tech that actually matters."
+msgstr ""
+
+#: .\templates\main\home.html:94
+msgid "Changing Lives"
+msgstr ""
+
+#: .\templates\main\home.html:103
+msgid "Campus Tools"
+msgstr ""
+
+#: .\templates\main\home.html:104
+msgid ""
+"Attendance tracking that's faster, smarter, and cheat-proof. QR codes, "
+"device detection, automated reporting – making campus life less of a hassle."
+msgstr ""
+
+#: .\templates\main\home.html:105
+msgid "Campus Approved"
+msgstr ""
+
+#: .\templates\main\home.html:114
+msgid "Business Dashboards"
+msgstr ""
+
+#: .\templates\main\home.html:115
+msgid ""
+"Inventory + sales charts that make sense, not headaches. Dynamic searches, "
+"graphical analysis, and clean UIs that your team will actually want to use."
+msgstr ""
+
+#: .\templates\main\home.html:116
+msgid "Data-Driven"
+msgstr ""
+
+#: .\templates\main\home.html:127
+msgid "Coming Soon"
+msgstr ""
+
+#: .\templates\main\home.html:128
+msgid ""
+"Mobile & desktop apps across every screen. We're cooking up native iOS, "
+"Android, and desktop solutions that'll make your current apps look ancient."
+msgstr ""
+
+#: .\templates\main\home.html:129
+msgid "In The Kitchen"
+msgstr ""
+
+#: .\templates\main\home.html:140
+msgid "Featured Flexes"
+msgstr ""
+
+#: .\templates\main\home.html:141
+msgid ""
+"Real projects, real results, real impact. Check out what we've been cooking."
+msgstr ""
+
+#: .\templates\main\home.html:148
+msgid "Tailwind Car App"
+msgstr ""
+
+#: .\templates\main\home.html:149
+msgid "E-commerce on wheels"
+msgstr ""
+
+#: .\templates\main\home.html:152
+msgid ""
+"Full-stack car parts e-commerce with secure authentication, shopping cart, "
+"and responsive Tailwind UI. Because selling car parts should be as smooth as "
+"driving."
+msgstr ""
+
+#: .\templates\main\home.html:154
+msgid "Check Demo"
+msgstr ""
+
+#: .\templates\main\home.html:163
+msgid "Production & Packaging"
+msgstr ""
+
+#: .\templates\main\home.html:164
+msgid "Factory workflows made simple"
+msgstr ""
+
+#: .\templates\main\home.html:167
+msgid ""
+"Django-powered factory management system with model tracking, quantity "
+"management, and PDF reporting. Making industrial processes actually "
+"manageable."
+msgstr ""
+
+#: .\templates\main\home.html:169
+msgid "View Code"
+msgstr ""
+
+#: .\templates\main\home.html:178
+msgid "APK Automation"
+msgstr ""
+
+#: .\templates\main\home.html:179
+msgid "Robots testing your apps"
+msgstr ""
+
+#: .\templates\main\home.html:182
+msgid ""
+"Appium-powered automated testing for Android apps with real-time feedback "
+"and emulator integration. Testing apps so you can focus on building them."
+msgstr ""
+
+#: .\templates\main\home.html:184
+msgid "See Demo"
+msgstr ""
+
+#: .\templates\main\home.html:193
+msgid "Hand Gesture Project"
+msgstr ""
+
+#: .\templates\main\home.html:194
+msgid "AI speaking with hands"
+msgstr ""
+
+#: .\templates\main\home.html:197
+msgid ""
+"TensorFlow-powered gesture recognition with real-time translation between "
+"gestures, text, and voice. Bridging communication gaps with cutting-edge AI."
+msgstr ""
+
+#: .\templates\main\home.html:199
+msgid "Experience It"
+msgstr ""
+
+#: .\templates\main\home.html:208
+msgid "Attendance System"
+msgstr ""
+
+#: .\templates\main\home.html:209
+msgid "Campus attendance, zero hassle"
+msgstr ""
+
+#: .\templates\main\home.html:212
+msgid ""
+"Smart attendance tracking with QR codes, device detection, and automated "
+"reporting. Making campus attendance as easy as showing up."
+msgstr ""
+
+#: .\templates\main\home.html:214
+msgid "Try It Out"
+msgstr ""
+
+#: .\templates\main\home.html:223
+msgid "Al-Asel Store"
+msgstr ""
+
+#: .\templates\main\home.html:224
+msgid "Smart dashboards for smart shops"
+msgstr ""
+
+#: .\templates\main\home.html:227
+msgid ""
+"Complete store management with inventory tracking, sales analysis, and "
+"beautiful charts. Turning retail chaos into organized profit."
+msgstr ""
+
+#: .\templates\main\home.html:229
+msgid "Explore Demo"
+msgstr ""
+
+#: .\templates\main\home.html:242
+msgid "Why We're Different"
+msgstr ""
+
+#: .\templates\main\home.html:243
+msgid ""
+"We don't just code, we craft experiences that make users smile and "
+"businesses thrive."
+msgstr ""
+
+#: .\templates\main\home.html:251
+msgid "We don't just code, we craft"
+msgstr ""
+
+#: .\templates\main\home.html:252
+msgid ""
+"Every line of code is written with purpose. Every pixel placed with "
+"intention. We build software that feels like art."
+msgstr ""
+
+#: .\templates\main\home.html:259
+msgid "Designs that slap, dashboards that don't lie"
+msgstr ""
+
+#: .\templates\main\home.html:260
+msgid ""
+"Our UIs are clean, modern, and actually usable. Our data visualizations tell "
+"the truth in beautiful ways."
+msgstr ""
+
+#: .\templates\main\home.html:267
+msgid "AI that feels human"
+msgstr ""
+
+#: .\templates\main\home.html:268
+msgid ""
+"We build intelligent systems that augment human capabilities, not replace "
+"human connection. Tech with empathy."
+msgstr ""
+
+#: .\templates\main\home.html:275
+msgid "Tech that actually solves problems"
+msgstr ""
+
+#: .\templates\main\home.html:276
+msgid ""
+"No fluff, no gimmicks. We build solutions that address real pain points and "
+"deliver measurable results."
+msgstr ""
+
+#: .\templates\main\home.html:288
+msgid "Wanna team up? Let's cook."
+msgstr ""
+
+#: .\templates\main\home.html:289
+msgid ""
+"Ready to build something that doesn't just work, but flexes? Hit us up and "
+"let's turn your vision into digital magic."
+msgstr ""
+
+#: .\templates\main\home.html:294
+msgid "Drop us a line"
+msgstr ""
+
+#: .\templates\main\home.html:298
+msgid "Let's chat"
+msgstr ""
+
+#: .\templates\main\home.html:302
+msgid "Check our code"
+msgstr ""
+
+#: .\templates\main\home.html:308
+msgid "Usually respond within 24 hours"
+msgstr ""

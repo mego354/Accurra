@@ -1,0 +1,316 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <h1>Accurra</h1>
+                <div class="tagline">
+                    {% trans "We build apps that don't just work… they flex." %}
+                </div>
+                <div class="subline">
+                    {% trans "Websites, mobile apps, desktop tools – all powered by AI, crafted for humans." %}
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-hero btn-primary-hero">
+                        <i class="fas fa-rocket me-2"></i>
+                        {% trans "Let's Build Something" %}
+                    </a>
+                    <a href="#projects" class="btn-hero btn-secondary-hero">
+                        <i class="fas fa-eye me-2"></i>
+                        {% trans "See Our Work" %}
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="float">
+                    <i class="fas fa-brain" style="font-size: 15rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; opacity: 0.8;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>{% trans "What We Cook Up" %}</h2>
+            <p>{% trans "From slick e-commerce to AI-powered automation – we build tech that actually makes sense." %}</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="card-title">
+                        {% trans "E-Commerce Platforms" %}
+                    </h3>
+                    <p class="card-text">
+                        {% trans "From car parts to fashion drops, we design slick stores that sell. Complete with secure checkout, inventory management, and admin dashboards that don't make you cry." %}
+                    </p>
+                    <span class="card-status">
+                        {% trans "Live & Flexing" %}
+                    </span>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "Smart Factory Systems" %}</h3>
+                    <p class="card-text">{% trans "Factory management tools that actually keep up with production. Track models, manage packaging, generate reports – because spreadsheets are so last decade." %}</p>
+                    <span class="card-status">{% trans "Production Ready" %}</span>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "AI Testing Bots" %}</h3>
+                    <p class="card-text">{% trans "Robots that test your Android apps so you don't have to. Automated APK testing with real-time feedback – because life's too short to click buttons manually." %}</p>
+                    <span class="card-status">{% trans "Automated AF" %}</span>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-hand-peace"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "Accessibility & AI" %}</h3>
+                    <p class="card-text">{% trans "Bridging worlds with gesture-to-voice translation for the deaf. Real-time AI that speaks with hands and talks with gestures – tech that actually matters." %}</p>
+                    <span class="card-status">{% trans "Changing Lives" %}</span>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "Campus Tools" %}</h3>
+                    <p class="card-text">{% trans "Attendance tracking that's faster, smarter, and cheat-proof. QR codes, device detection, automated reporting – making campus life less of a hassle." %}</p>
+                    <span class="card-status">{% trans "Campus Approved" %}</span>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card-3d">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "Business Dashboards" %}</h3>
+                    <p class="card-text">{% trans "Inventory + sales charts that make sense, not headaches. Dynamic searches, graphical analysis, and clean UIs that your team will actually want to use." %}</p>
+                    <span class="card-status">{% trans "Data-Driven" %}</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="card-3d">
+                    <div class="card-icon mx-auto">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="card-title">{% trans "Coming Soon" %}</h3>
+                    <p class="card-text">{% trans "Mobile & desktop apps across every screen. We're cooking up native iOS, Android, and desktop solutions that'll make your current apps look ancient." %}</p>
+                    <span class="card-status">{% trans "In The Kitchen" %}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Projects -->
+<section id="projects" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+        <div class="section-title">
+            <h2>{% trans "Featured Flexes" %}</h2>
+            <p>{% trans "Real projects, real results, real impact. Check out what we've been cooking." %}</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "Tailwind Car App" %}</div>
+                        <div class="project-subtitle">{% trans "E-commerce on wheels" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "Full-stack car parts e-commerce with secure authentication, shopping cart, and responsive Tailwind UI. Because selling car parts should be as smooth as driving." %}</p>
+                        <a href="https://mego354.github.io/Tailwind-car-app/" class="demo-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i> {% trans "Check Demo" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "Production & Packaging" %}</div>
+                        <div class="project-subtitle">{% trans "Factory workflows made simple" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "Django-powered factory management system with model tracking, quantity management, and PDF reporting. Making industrial processes actually manageable." %}</p>
+                        <a href="https://github.com/mego354/Honest" class="demo-link" target="_blank">
+                            <i class="fab fa-github me-2"></i> {% trans "View Code" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "APK Automation" %}</div>
+                        <div class="project-subtitle">{% trans "Robots testing your apps" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "Appium-powered automated testing for Android apps with real-time feedback and emulator integration. Testing apps so you can focus on building them." %}</p>
+                        <a href="https://mego354.github.io/Automation-Testing/" class="demo-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i> {% trans "See Demo" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "Hand Gesture Project" %}</div>
+                        <div class="project-subtitle">{% trans "AI speaking with hands" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "TensorFlow-powered gesture recognition with real-time translation between gestures, text, and voice. Bridging communication gaps with cutting-edge AI." %}</p>
+                        <a href="https://mego354.github.io/Hand-Gesture-Project/" class="demo-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i> {% trans "Experience It" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "Attendance System" %}</div>
+                        <div class="project-subtitle">{% trans "Campus attendance, zero hassle" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "Smart attendance tracking with QR codes, device detection, and automated reporting. Making campus attendance as easy as showing up." %}</p>
+                        <a href="https://mego354.github.io/Attendance-Management/" class="demo-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i> {% trans "Try It Out" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">{% trans "Al-Asel Store" %}</div>
+                        <div class="project-subtitle">{% trans "Smart dashboards for smart shops" %}</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-desc">{% trans "Complete store management with inventory tracking, sales analysis, and beautiful charts. Turning retail chaos into organized profit." %}</p>
+                        <a href="https://mego354.github.io/Al-Asel/" class="demo-link" target="_blank">
+                            <i class="fas fa-external-link-alt me-2"></i> {% trans "Explore Demo" %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us Section -->
+<section id="why-us" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>{% trans "Why We're Different" %}</h2>
+            <p>{% trans "We don't just code, we craft experiences that make users smile and businesses thrive." %}</p>
+        </div>
+        
+        <div class="why-us-grid">
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3 class="why-title">{% trans "We don't just code, we craft" %}</h3>
+                <p class="why-text">{% trans "Every line of code is written with purpose. Every pixel placed with intention. We build software that feels like art." %}</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <h3 class="why-title">{% trans "Designs that slap, dashboards that don't lie" %}</h3>
+                <p class="why-text">{% trans "Our UIs are clean, modern, and actually usable. Our data visualizations tell the truth in beautiful ways." %}</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 class="why-title">{% trans "AI that feels human" %}</h3>
+                <p class="why-text">{% trans "We build intelligent systems that augment human capabilities, not replace human connection. Tech with empathy." %}</p>
+            </div>
+            
+            <div class="why-item">
+                <div class="why-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 class="why-title">{% trans "Tech that actually solves problems" %}</h3>
+                <p class="why-text">{% trans "No fluff, no gimmicks. We build solutions that address real pain points and deliver measurable results." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-card">
+                    <h2 class="contact-title">{% trans "Wanna team up? Let's cook." %}</h2>
+                    <p class="contact-subtitle">{% trans "Ready to build something that doesn't just work, but flexes? Hit us up and let's turn your vision into digital magic." %}</p>
+                    
+                    <div class="contact-buttons">
+                        <a href="mailto:contact@accurra.com" class="contact-btn contact-btn-email">
+                            <i class="fas fa-envelope"></i>
+                            {% trans "Drop us a line" %}
+                        </a>
+                        <a href="https://wa.me/201026004642" class="contact-btn contact-btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            {% trans "Let's chat" %}
+                        </a>
+                        <a href="https://github.com/mego354" class="contact-btn contact-btn-github" target="_blank">
+                            <i class="fab fa-github"></i>
+                            {% trans "Check our code" %}
+                        </a>
+                    </div>
+                    
+                    <div style="max-width: 500px; margin: 0 auto;">
+                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">
+                            <i class="fas fa-clock me-2"></i> {% trans "Usually respond within 24 hours" %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
