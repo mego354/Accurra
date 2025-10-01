@@ -967,7 +967,7 @@
             <div class="footer-content">
                 <div class="footer-brand" data-en="Accurra" data-ar="أكورا">Accurra</div>
                 <p data-en="Building the future, one flex at a time." data-ar="بنبني المستقبل، فليكس واحد في المرة.">Building the future, one flex at a time.</p>
-                <p data-en="&copy; 2024 Accurra. Made with <i class=&quot;fas fa-heart&quot; style=&quot;color: var(--accent-pink);&quot;></i> and lots of caffeine." data-ar="&copy; 2024 أكورا. مصنوع بـ <i class=&quot;fas fa-heart&quot; style=&quot;color: var(--accent-pink);&quot;></i> وكمية كبيرة من الكافيين.">&copy; 2024 Accurra. Made with <i class="fas fa-heart" style="color: var(--accent-pink);"></i> and lots of caffeine.</p>
+                <p data-en="&copy; 2025 Accurra. Made with <i class='fas fa-heart' style='color: var(--accent-pink);'></i> and lots of caffeine." data-ar="&copy; 2025 أكورا. مصنوع بـ <i class='fas fa-heart' style='color: var(--accent-pink);'></i> وكمية كبيرة من الكافيين.">&copy; 2025 Accurra. Made with <i class="fas fa-heart" style="color: var(--accent-pink);"></i> and lots of caffeine.</p>
             </div>
         </div>
     </footer>
@@ -989,7 +989,13 @@
             
             // Update all elements with data attributes
             document.querySelectorAll('[data-en][data-ar]').forEach(element => {
-                element.textContent = element.getAttribute(`data-${newLang}`);
+                const content = element.getAttribute(`data-${newLang}`);
+                // Check if content contains HTML tags
+                if (content.includes('<')) {
+                    element.innerHTML = content;
+                } else {
+                    element.textContent = content;
+                }
             });
             
             localStorage.setItem('language', newLang);
@@ -1027,7 +1033,13 @@
             
             // Update all elements with data attributes
             document.querySelectorAll('[data-en][data-ar]').forEach(element => {
-                element.textContent = element.getAttribute(`data-${savedLang}`);
+                const content = element.getAttribute(`data-${savedLang}`);
+                // Check if content contains HTML tags
+                if (content.includes('<')) {
+                    element.innerHTML = content;
+                } else {
+                    element.textContent = content;
+                }
             });
         });
 
