@@ -2,6 +2,9 @@
 
 A modern Django web application with Egyptian timezone support and Arabic-English slang-friendly content.
 
+## 🚀 Live Demo
+[Visit the Website](https://mego354.github.io/Accurra/)
+
 ## Features
 
 - 🕐 **Egyptian Timezone Support** - Real-time display of Cairo time
