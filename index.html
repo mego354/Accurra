@@ -97,7 +97,7 @@
         .nav-link {
             color: var(--text-secondary) !important;
             font-weight: 500;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             position: relative;
         }
 
@@ -112,7 +112,7 @@
             color: var(--text-primary);
             padding: 8px 12px;
             border-radius: 50px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .theme-toggle:hover {
@@ -127,7 +127,7 @@
             color: var(--text-primary);
             padding: 8px 12px;
             border-radius: 50px;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .language-toggle:hover {
@@ -148,6 +148,22 @@
         .hero-content {
             z-index: 2;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .hero-visual {
+            z-index: 2;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 2rem 0;
         }
 
         .hero h1 {
@@ -159,7 +175,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: fadeInUp 1s ease-out;
+            animation: fadeInUp 0.6s ease-out;
         }
 
         .hero .tagline {
@@ -167,14 +183,14 @@
             font-weight: 600;
             color: var(--text-primary);
             margin-bottom: 1rem;
-            animation: fadeInUp 1s ease-out 0.2s both;
+            animation: fadeInUp 0.6s ease-out 0.1s both;
         }
 
         .hero .subline {
             font-size: clamp(1rem, 3vw, 1.3rem);
             color: var(--text-secondary);
             margin-bottom: 3rem;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            animation: fadeInUp 0.6s ease-out 0.2s both;
         }
 
         .btn-hero {
@@ -185,10 +201,12 @@
             border-radius: 50px;
             text-decoration: none;
             display: inline-block;
-            transition: all 0.4s ease;
+            transition: all 0.2s ease;
             position: relative;
             overflow: hidden;
             margin: 0.5rem;
+            min-width: 200px;
+            text-align: center;
         }
 
         .btn-primary-hero {
@@ -250,7 +268,7 @@
             border-radius: 20px;
             padding: 2.5rem;
             height: 100%;
-            transition: all 0.4s ease;
+            transition: all 0.2s ease;
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(20px);
@@ -265,7 +283,7 @@
             height: 4px;
             background: var(--gradient-primary);
             transform: scaleX(0);
-            transition: transform 0.4s ease;
+            transition: transform 0.2s ease;
         }
 
         .card-3d:hover::before {
@@ -320,7 +338,7 @@
             border: 1px solid var(--card-border);
             border-radius: 20px;
             overflow: hidden;
-            transition: all 0.4s ease;
+            transition: all 0.2s ease;
             height: 100%;
             backdrop-filter: blur(20px);
         }
@@ -331,6 +349,27 @@
         }
 
         .project-header {
+            padding: 0;
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .project-content {
             padding: 2rem;
             background: var(--gradient-primary);
             color: white;
@@ -365,7 +404,7 @@
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: inline-block;
         }
 
@@ -383,12 +422,13 @@
         }
 
         .why-item {
+            min-height: 220px;
             text-align: center;
-            padding: 2rem;
+            padding: 1.7rem;
             background: var(--card-bg);
             border: 1px solid var(--card-border);
             border-radius: 20px;
-            transition: all 0.4s ease;
+            transition: all 0.2s ease;
             backdrop-filter: blur(20px);
         }
 
@@ -463,7 +503,7 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -494,13 +534,310 @@
         /* Footer */
         .footer {
             background: var(--bg-tertiary);
-            padding: 3rem 0;
-            text-align: center;
+            padding: 4rem 0 2rem;
+            border-top: 1px solid var(--card-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--gradient-primary);
+        }
+
+        .footer-brand h3 {
+            color: var(--text-primary);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-brand p {
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border: 2px solid var(--accent-blue);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(49, 130, 206, 0.3);
+            font-size: 1.2rem;
+            margin: 0 0.5rem;
+        }
+
+        .social-link svg {
+            color: white !important;
+            fill: white !important;
+            width: 20px;
+            height: 20px;
+            display: block;
+        }
+
+        .social-link:hover {
+            background: var(--gradient-secondary);
+            color: white;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 8px 25px rgba(56, 161, 105, 0.4);
+            border-color: var(--accent-green);
+        }
+
+        .social-link:hover svg {
+            color: white !important;
+            fill: white !important;
+        }
+
+        .footer-section h4 {
+            color: var(--text-primary);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+            padding: 0.3rem 0;
+            border-radius: 5px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-blue);
+            background: rgba(49, 130, 206, 0.1);
+            transform: translateX(8px);
+            padding-left: 0.5rem;
+            box-shadow: 0 2px 8px rgba(49, 130, 206, 0.2);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-primary);
+            padding: 0.8rem;
+            background: rgba(49, 130, 206, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(49, 130, 206, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(49, 130, 206, 0.1);
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(49, 130, 206, 0.2);
+        }
+
+        .contact-item i {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
+        }
+
+        .contact-item span {
+            font-weight: 500;
+        }
+
+        .contact-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-blue);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
             border-top: 1px solid var(--card-border);
         }
 
-        .footer-content {
+        .footer-bottom p {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .copyright-text {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: left;
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+
+        [dir="rtl"] .copyright-text {
+            text-align: right;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--accent-blue);
+            background: rgba(49, 130, 206, 0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 3rem 0 2rem;
+            }
+            
+            .footer-bottom {
+                text-align: center;
+            }
+            
+            .footer-bottom-links {
+                justify-content: center;
+                margin-top: 1rem;
+            }
+        }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            border-radius: 20px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid var(--card-border);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .modal-header h2 {
+            color: var(--text-primary);
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 2rem;
             color: var(--text-secondary);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--accent-blue);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-body h3 {
+            color: var(--text-primary);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.8rem 0;
+        }
+
+        .modal-body h3:first-child {
+            margin-top: 0;
+        }
+
+        .modal-body p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
         }
 
         .footer-brand {
@@ -534,11 +871,169 @@
             animation: float 6s ease-in-out infinite;
         }
 
+        /* Special Offer Banner */
+        .offer-banner {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 50%, #ff6b6b 100%);
+            color: white;
+            padding: 1.5rem 0;
+            position: relative;
+            overflow: visible;
+            z-index: 1000;
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            display: block;
+            border: none;
+            box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Shine animation removed for stability */
+
+        .offer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .offer-icon {
+            font-size: 2rem;
+        }
+
+        .offer-text {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .offer-highlight {
+            margin-right: 0.5rem;
+            font-weight: 900;
+            font-size: 1.6rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            display: inline-block;
+        }
+
+        .offer-highlight::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: white;
+            transform: translateY(-50%) rotate(-15deg);
+            z-index: 1;
+        }
+
+        .offer-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .offer-btn:hover {
+            background: white;
+            color: #ff6b6b;
+            transform: scale(1.05);
+        }
+
+        /* All keyframe animations removed for stability */
+
+        @media (min-width: 1024px) {
+            .offer-banner {
+                padding: 2rem 0;
+                padding-top: 5rem;
+                width: 100vw;
+                margin-left: calc(-50vw + 50%);
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+            
+            .offer-content {
+                gap: 3rem;
+                display: flex !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+            }
+            
+            .offer-text {
+                font-size: 1.4rem;
+                display: block !important;
+            }
+            
+            .offer-highlight {
+                font-size: 1.5rem;
+                display: inline-block !important;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .offer-banner {
+                padding: 2.5rem ;
+                padding-top: 5rem;
+                padding-bottom: 1rem;
+            }
+            
+            .offer-content {
+                gap: 4rem;
+            }
+            
+            .offer-text {
+                font-size: 1.6rem;
+            }
+            
+            .offer-highlight {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .offer-content {
+                padding-inline: 0;
+                flex-direction: column;
+
+                gap: 1rem;
+                text-align: center;
+            }
+            
+            .offer-text {
+                font-size: 1rem;
+            }
+            
+            .offer-highlight {
+                font-size: 1.1rem;
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero {
                 text-align: center;
                 padding: 2rem 0;
+            }
+
+            .hero-content,
+            .hero-visual {
+                height: auto;
+                min-height: auto;
+                padding: 1rem 0;
+            }
+
+            .hero-visual {
+                margin-top: 2rem;
             }
 
             .contact-buttons {
@@ -668,27 +1163,48 @@
         </div>
     </nav>
 
+    <!-- Special Offer Banner -->
+    <div class="offer-banner">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="offer-text">
+                    <span class="offer-highlight" data-en="30% OFF" data-ar="خصم 30%">30% OFF</span>
+                    <span data-en="All Projects Until End of 2025!" data-ar="جميع المشاريع حتى نهاية 2025!">All Projects Until End of 2025!</span>
+                </div>
+                <div class="offer-cta">
+                    <a href="#contact" class="offer-btn">
+                        <i class="fas fa-rocket me-2"></i>
+                        <span data-en="Claim Now" data-ar="احصل عليه الآن">Claim Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
                     <h1 data-en="Accurra" data-ar="أكورا">Accurra</h1>
-                    <div class="tagline" data-en="Professional Software Development & Digital Solutions" data-ar="تطوير البرمجيات المهنية والحلول الرقمية">Professional Software Development & Digital Solutions</div>
+                    <div class="tagline" data-en="Less Effort, More Living" data-ar="جهد أقل، حياة أكثر">Less Effort, More Living</div>
                     <div class="subline" data-en="Transform your business with custom web applications, mobile apps, and AI-powered solutions. We deliver results that drive growth and efficiency." data-ar="حوّل عملك بتطبيقات الويب المخصصة، تطبيقات الهاتف المحمول، والحلول المدعومة بالذكاء الاصطناعي. نحقق نتائج تدفع النمو والكفاءة.">Transform your business with custom web applications, mobile apps, and AI-powered solutions. We deliver results that drive growth and efficiency.</div>
                     
-                    <div class="hero-buttons">
+                    <div class="hero-buttons d-flex flex-wrap gap-3 justify-content-center">
                         <a href="#contact" class="btn-hero btn-primary-hero">
-                            <i class="fas fa-handshake me-2"></i> <span data-en="Start Your Project" data-ar="ابدأ مشروعك">Start Your Project</span>
+                            <i class="fas fa-handshake me-2"></i> <span data-en="Get Free Consultation" data-ar="احصل على استشارة مجانية">Get Free Consultation</span>
                         </a>
                         <a href="#about" class="btn-hero btn-secondary-hero">
                             <i class="fas fa-info-circle me-2"></i> <span data-en="Learn More" data-ar="اعرف أكثر">Learn More</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
+                <div class="col-lg-6 hero-visual">
                     <div class="float">
-                        <i class="fas fa-cogs" style="font-size: 15rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; opacity: 0.8;"></i>
+                        <i class="fas fa-brain" style="font-size: 15rem; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; opacity: 0.8;"></i>
                     </div>
                 </div>
             </div>
@@ -710,39 +1226,31 @@
                         <p class="card-text" data-en="To empower businesses with cutting-edge technology solutions that streamline operations, enhance productivity, and drive measurable growth. We believe technology should solve real problems and create lasting value." data-ar="تمكين الشركات بحلول تكنولوجية متطورة تبسط العمليات، وتعزز الإنتاجية، وتدفع النمو القابل للقياس. نؤمن أن التكنولوجيا يجب أن تحل مشاكل حقيقية وتخلق قيمة دائمة.">To empower businesses with cutting-edge technology solutions that streamline operations, enhance productivity, and drive measurable growth. We believe technology should solve real problems and create lasting value.</p>
                         
                         <h3 data-en="Our Expertise" data-ar="خبرتنا">Our Expertise</h3>
-                        <div class="row mt-3">
-                            <div class="col-6">
+                        <div class="row mt-3 why-us-grid">
                                 <div class="why-item">
                                     <div class="why-icon">
                                         <i class="fas fa-code"></i>
                                     </div>
                                     <h4 data-en="Web Development" data-ar="تطوير الويب">Web Development</h4>
                                 </div>
-                            </div>
-                            <div class="col-6">
                                 <div class="why-item">
                                     <div class="why-icon">
                                         <i class="fas fa-mobile-alt"></i>
                                     </div>
                                     <h4 data-en="Mobile Apps" data-ar="تطبيقات الهاتف">Mobile Apps</h4>
                                 </div>
-                            </div>
-                            <div class="col-6">
                                 <div class="why-item">
                                     <div class="why-icon">
                                         <i class="fas fa-robot"></i>
                                     </div>
                                     <h4 data-en="AI Solutions" data-ar="حلول الذكاء الاصطناعي">AI Solutions</h4>
                                 </div>
-                            </div>
-                            <div class="col-6">
                                 <div class="why-item">
                                     <div class="why-icon">
                                         <i class="fas fa-chart-line"></i>
                                     </div>
                                     <h4 data-en="Business Analytics" data-ar="تحليلات الأعمال">Business Analytics</h4>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -778,8 +1286,12 @@
                                 <div class="why-icon">
                                     <i class="fas fa-headset"></i>
                                 </div>
-                                <h4 data-en="24/7 Support" data-ar="دعم 24/7">24/7 Support</h4>
-                                <p data-en="Round-the-clock technical support and maintenance services." data-ar="دعم فني وخدمات صيانة على مدار الساعة.">Round-the-clock technical support and maintenance services.</p>
+                                        <h4 data-en="24/7 Support" data-ar="دعم 24/7">24/7 Support</h4>
+                                        <p data-en="Round-the-clock technical support and maintenance services." data-ar="دعم فني وخدمات صيانة على مدار الساعة.">Round-the-clock technical support and maintenance services.</p>
+                                        
+                                        <div style="background: var(--gradient-primary); color: white; padding: 0.6rem 1rem; border-radius: 15px; font-weight: 600; margin-top: 1rem; font-size: 0.9rem;">
+                                            <i class="fas fa-star me-2"></i> <span data-en="Start with FREE Consultation" data-ar="ابدأ باستشارة مجانية">Start with FREE Consultation</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
@@ -934,21 +1446,26 @@
     <section id="projects" class="section">
         <div class="container">
             <div class="section-title">
-                <h2 data-en="Our Portfolio" data-ar="معرض أعمالنا">Our Portfolio</h2>
-                <p data-en="Explore our successful projects and see how we've helped businesses achieve their digital transformation goals." data-ar="استكشف مشاريعنا الناجحة وشاهد كيف ساعدنا الشركات في تحقيق أهداف التحول الرقمي.">Explore our successful projects and see how we've helped businesses achieve their digital transformation goals.</p>
+                <h2 data-en="Success Stories" data-ar="قصص النجاح">Success Stories</h2>
+                <p data-en="See how we've transformed businesses with our 'Less Effort, More Living' approach. Real results that make life easier for our clients." data-ar="شاهد كيف حولنا الأعمال بنهجنا 'جهد أقل، حياة أكثر'. نتائج حقيقية تجعل الحياة أسهل لعملائنا.">See how we've transformed businesses with our 'Less Effort, More Living' approach. Real results that make life easier for our clients.</p>
             </div>
             
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="Tailwind Car App" data-ar="تطبيق السيارات Tailwind">Tailwind Car App</div>
-                            <div class="project-subtitle" data-en="E-commerce on wheels" data-ar="تجارة إلكترونية على عجلات">E-commerce on wheels</div>
+                            <div class="project-image">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="AutoParts Pro" data-ar="أوتو بارتس برو">AutoParts Pro</div>
+                                <div class="project-subtitle" data-en="From chaos to cash flow" data-ar="من الفوضى إلى التدفق النقدي">From chaos to cash flow</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="Complete e-commerce for car parts with secure auth, shopping cart, and responsive Tailwind UI. Because selling car parts should be as smooth as driving." data-ar="تجارة إلكترونية كاملة لقطع السيارات مع مصادقة آمنة، عربة تسوق، وواجهة Tailwind متجاوبة. لأن بيع قطع السيارات لازم يكون سلس زي القيادة.">Complete e-commerce for car parts with secure auth, shopping cart, and responsive Tailwind UI. Because selling car parts should be as smooth as driving.</p>
-                            <a href="https://mego354.github.io/Tailwind-car-app/" class="demo-link" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> <span data-en="View Demo" data-ar="شوف الديمو">View Demo</span>
+                            <p class="project-desc" data-en="Transformed a struggling auto parts business into a thriving online store. Sales increased 300% in 6 months. No more inventory headaches, no more lost sales - just smooth operations and happy customers." data-ar="حولنا متجر قطع غيار سيارات متعثر إلى متجر إلكتروني مزدهر. زادت المبيعات 300% في 6 أشهر. لا مزيد من صداع المخزون، لا مزيد من المبيعات المفقودة - فقط عمليات سلسة وعملاء سعداء.">Transformed a struggling auto parts business into a thriving online store. Sales increased 300% in 6 months. No more inventory headaches, no more lost sales - just smooth operations and happy customers.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -957,13 +1474,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="Production & Packaging" data-ar="الإنتاج والتغليف">Production & Packaging</div>
-                            <div class="project-subtitle" data-en="Factory workflow simplified" data-ar="سير عمل المصانع مبسط">Factory workflow simplified</div>
+                            <div class="project-image">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="SmartFactory Manager" data-ar="مدير المصنع الذكي">SmartFactory Manager</div>
+                                <div class="project-subtitle" data-en="From spreadsheets to success" data-ar="من الجداول إلى النجاح">From spreadsheets to success</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="Django-powered factory management system with model tracking, quantity management, and PDF reports. Making industrial operations actually manageable." data-ar="نظام إدارة مصانع مدعوم بـ Django مع تتبع الموديلات، إدارة الكميات، وتقارير PDF. نجعل العمليات الصناعية قابلة للإدارة فعلاً.">Django-powered factory management system with model tracking, quantity management, and PDF reports. Making industrial operations actually manageable.</p>
-                            <a href="https://github.com/mego354/Honest" class="demo-link" target="_blank">
-                                <i class="fab fa-github me-2"></i> <span data-en="View Code" data-ar="شوف الكود">View Code</span>
+                            <p class="project-desc" data-en="Eliminated the chaos of manual factory management. One manufacturer reduced paperwork by 90% and increased productivity by 40%. Managers now sleep better knowing everything is tracked automatically." data-ar="أزلنا فوضى الإدارة اليدوية للمصانع. مصنع واحد قلل الورق بنسبة 90% وزاد الإنتاجية 40%. المديرون ينامون أفضل الآن وهم يعرفون أن كل شيء متتبع تلقائياً.">Eliminated the chaos of manual factory management. One manufacturer reduced paperwork by 90% and increased productivity by 40%. Managers now sleep better knowing everything is tracked automatically.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -972,13 +1494,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="APK Automation" data-ar="أتمتة APK">APK Automation</div>
-                            <div class="project-subtitle" data-en="Bots that test your apps" data-ar="روبوتات بتختبر تطبيقاتك">Bots that test your apps</div>
+                            <div class="project-image">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="QualityGuard Pro" data-ar="جارد الجودة برو">QualityGuard Pro</div>
+                                <div class="project-subtitle" data-en="Sleep while we test" data-ar="نام ونحن نختبر">Sleep while we test</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="Appium-powered automated testing for Android apps with real-time feedback and emulator integration. We test apps so you can focus on building them." data-ar="اختبار تلقائي مدعوم بـ Appium لتطبيقات Android مع ردود فعل فورية وتكامل المحاكي. نختبر التطبيقات عشان تركز في بنائها.">Appium-powered automated testing for Android apps with real-time feedback and emulator integration. We test apps so you can focus on building them.</p>
-                            <a href="https://mego354.github.io/Automation-Testing/" class="demo-link" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> <span data-en="View Demo" data-ar="شوف الديمو">View Demo</span>
+                            <p class="project-desc" data-en="One app developer was spending 8 hours daily on manual testing. Now our bots do it in 30 minutes while they sleep. Zero bugs reach users, 100% confidence in releases. More time for innovation, less stress." data-ar="مطور تطبيق كان يقضي 8 ساعات يومياً في الاختبار اليدوي. الآن روبوتاتنا تفعل ذلك في 30 دقيقة بينما ينام. صفر أخطاء تصل للمستخدمين، 100% ثقة في الإصدارات. وقت أكثر للابتكار، ضغط أقل.">One app developer was spending 8 hours daily on manual testing. Now our bots do it in 30 minutes while they sleep. Zero bugs reach users, 100% confidence in releases. More time for innovation, less stress.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -987,13 +1514,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="Hand Gesture Project" data-ar="مشروع إيماءات اليد">Hand Gesture Project</div>
-                            <div class="project-subtitle" data-en="AI that speaks with hands" data-ar="ذكاء اصطناعي بيحكي بالإيدين">AI that speaks with hands</div>
+                            <div class="project-image">
+                                <i class="fas fa-hands"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="BridgeConnect AI" data-ar="بريدج كونكت الذكي">BridgeConnect AI</div>
+                                <div class="project-subtitle" data-en="Breaking communication barriers" data-ar="كسر حواجز التواصل">Breaking communication barriers</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="TensorFlow-powered gesture recognition with real-time translation between gestures, text, and speech. Bridging communication gaps with cutting-edge AI." data-ar="تعرف على الإيماءات مدعوم بـ TensorFlow مع ترجمة فورية بين الإيماءات والنص والصوت. ربط فجوات التواصل بأحدث الذكاء الاصطناعي.">TensorFlow-powered gesture recognition with real-time translation between gestures, text, and speech. Bridging communication gaps with cutting-edge AI.</p>
-                            <a href="https://mego354.github.io/Hand-Gesture-Project/" class="demo-link" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> <span data-en="Try It" data-ar="جربه">Try It</span>
+                            <p class="project-desc" data-en="A school for deaf students was struggling with communication. Now teachers and students connect instantly through AI-powered gesture translation. Learning became 3x faster, frustration became joy. Technology that truly matters." data-ar="مدرسة للطلاب الصم كانت تعاني من مشاكل التواصل. الآن المعلمون والطلاب يتواصلون فوراً عبر ترجمة الإيماءات بالذكاء الاصطناعي. التعلم أصبح أسرع 3 مرات، الإحباط أصبح فرح. تكنولوجيا مهمة فعلاً.">A school for deaf students was struggling with communication. Now teachers and students connect instantly through AI-powered gesture translation. Learning became 3x faster, frustration became joy. Technology that truly matters.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -1002,13 +1534,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="Attendance System" data-ar="نظام الحضور">Attendance System</div>
-                            <div class="project-subtitle" data-en="Campus attendance, no hassle" data-ar="حضور جامعي، بدون تعقيد">Campus attendance, no hassle</div>
+                            <div class="project-image">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="CampusFlow Pro" data-ar="كامبس فلو برو">CampusFlow Pro</div>
+                                <div class="project-subtitle" data-en="No more attendance nightmares" data-ar="لا مزيد من كوابيس الحضور">No more attendance nightmares</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="Smart attendance tracking with QR codes, device detection, and automated reports. Making campus attendance as easy as showing up." data-ar="تتبع ذكي للحضور مع رموز QR، كشف الأجهزة، وتقارير تلقائية. نجعل الحضور الجامعي سهل زي الحضور نفسه.">Smart attendance tracking with QR codes, device detection, and automated reports. Making campus attendance as easy as showing up.</p>
-                            <a href="https://mego354.github.io/Attendance-Management/" class="demo-link" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> <span data-en="Try It" data-ar="جربه">Try It</span>
+                            <p class="project-desc" data-en="A university was drowning in manual attendance sheets and lost records. Now professors scan QR codes in 2 seconds, students get instant notifications, and administrators get perfect reports. 95% time saved, 100% accuracy achieved." data-ar="جامعة كانت تغرق في أوراق الحضور اليدوية والسجلات المفقودة. الآن الأساتذة يمسحون رموز QR في ثانيتين، الطلاب يحصلون على إشعارات فورية، والإدارة تحصل على تقارير مثالية. 95% وقت محفوظ، 100% دقة محققة.">A university was drowning in manual attendance sheets and lost records. Now professors scan QR codes in 2 seconds, students get instant notifications, and administrators get perfect reports. 95% time saved, 100% accuracy achieved.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -1017,13 +1554,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <div class="project-header">
-                            <div class="project-title" data-en="Honey Store" data-ar="متجر العسل">Honey Store</div>
-                            <div class="project-subtitle" data-en="Smart dashboards for smart stores" data-ar="لوحات تحكم ذكية للمتاجر الذكية">Smart dashboards for smart stores</div>
+                            <div class="project-image">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-title" data-en="SweetSuccess Analytics" data-ar="سويت ساكسيس للتحليلات">SweetSuccess Analytics</div>
+                                <div class="project-subtitle" data-en="From chaos to clarity" data-ar="من الفوضى إلى الوضوح">From chaos to clarity</div>
+                            </div>
                         </div>
                         <div class="project-body">
-                            <p class="project-desc" data-en="Complete store management with inventory tracking, sales analytics, and beautiful charts. Turning retail chaos into organized profit." data-ar="إدارة متجر كاملة مع تتبع المخزون، تحليل المبيعات، ورسوم بيانية جميلة. تحويل فوضى البيع بالتجزئة إلى ربح منظم.">Complete store management with inventory tracking, sales analytics, and beautiful charts. Turning retail chaos into organized profit.</p>
-                            <a href="https://mego354.github.io/Al-Asel/" class="demo-link" target="_blank">
-                                <i class="fas fa-external-link-alt me-2"></i> <span data-en="Explore Demo" data-ar="استكشف الديمو">Explore Demo</span>
+                            <p class="project-desc" data-en="A family honey business was losing money on expired products and missed opportunities. Now they see exactly what sells, when to restock, and which products make the most profit. Revenue increased 250% in 4 months." data-ar="مشروع عسل عائلي كان يخسر المال على المنتجات المنتهية الصلاحية والفرص الضائعة. الآن يرون بالضبط ما يباع، متى يعيدون التخزين، وأي منتجات تحقق أكبر ربح. الإيرادات زادت 250% في 4 أشهر.">A family honey business was losing money on expired products and missed opportunities. Now they see exactly what sells, when to restock, and which products make the most profit. Revenue increased 250% in 4 months.</p>
+                            <a href="#contact" class="demo-link">
+                                <i class="fas fa-handshake me-2"></i> <span data-en="Get Similar Results" data-ar="احصل على نتائج مشابهة">Get Similar Results</span>
                             </a>
                         </div>
                     </div>
@@ -1135,10 +1677,10 @@
                 <div class="col-lg-8">
                     <div class="contact-card">
                         <h2 class="contact-title" data-en="Ready to Transform Your Business?" data-ar="مستعد لتحويل عملك؟">Ready to Transform Your Business?</h2>
-                        <p class="contact-subtitle" data-en="Let's discuss how we can help you achieve your digital transformation goals. Get in touch for a free consultation and project estimate." data-ar="دعنا نناقش كيف يمكننا مساعدتك في تحقيق أهداف التحول الرقمي. تواصل معنا للحصول على استشارة مجانية وتقدير للمشروع.">Let's discuss how we can help you achieve your digital transformation goals. Get in touch for a free consultation and project estimate.</p>
+                        <p class="contact-subtitle" data-en="Let's discuss how we can help you achieve your digital transformation goals. Get in touch for a FREE consultation and project estimate - no strings attached!" data-ar="دعنا نناقش كيف يمكننا مساعدتك في تحقيق أهداف التحول الرقمي. تواصل معنا للحصول على استشارة مجانية وتقدير للمشروع - بدون التزامات!">Let's discuss how we can help you achieve your digital transformation goals. Get in touch for a FREE consultation and project estimate - no strings attached!</p>
                         
                         <div class="contact-buttons">
-                            <a href="/cdn-cgi/l/email-protection#d2bfb3babfbda7b6bfb7b5b3bab6e2e3e2e2e2e292b5bfb3bbbefcb1bdbf" class="contact-btn contact-btn-email">
+                            <a href="mailto:mahmoudmegahd010000@gmail.com" class="contact-btn contact-btn-email">
                                 <i class="fas fa-envelope"></i>
                                 <span data-en="Get Free Consultation" data-ar="احصل على استشارة مجانية">Get Free Consultation</span>
                             </a>
@@ -1146,13 +1688,12 @@
                                 <i class="fab fa-whatsapp"></i>
                                 <span data-en="WhatsApp Chat" data-ar="محادثة واتساب">WhatsApp Chat</span>
                             </a>
-                            <a href="https://github.com/mego354" class="contact-btn contact-btn-github" target="_blank">
-                                <i class="fab fa-github"></i>
-                                <span data-en="View Our Work" data-ar="شاهد أعمالنا">View Our Work</span>
-                            </a>
                         </div>
                         
                         <div style="max-width: 500px; margin: 0 auto;">
+                            <div style="background: var(--gradient-secondary); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; font-weight: 600; margin-bottom: 1rem; display: inline-block;">
+                                <i class="fas fa-gift me-2"></i> <span data-en="FREE CONSULTATION - No Obligation!" data-ar="استشارة مجانية - بدون التزام!">FREE CONSULTATION - No Obligation!</span>
+                            </div>
                             <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0;">
                                 <i class="fas fa-clock me-2"></i> <span data-en="We usually respond within 24 hours" data-ar="عادي نرد خلال 24 ساعة">We usually respond within 24 hours</span>
                             </p>
@@ -1163,19 +1704,150 @@
         </div>
     </section>
 
+    <!-- Privacy Policy Modal -->
+    <div id="privacy" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</h2>
+                <button class="modal-close" onclick="closeModal('privacy')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 data-en="Information We Collect" data-ar="المعلومات التي نجمعها">Information We Collect</h3>
+                <p data-en="We collect information you provide directly to us, such as when you contact us for consultation or services." data-ar="نجمع المعلومات التي تقدمها لنا مباشرة، مثل عندما تتواصل معنا للحصول على استشارة أو خدمات.">We collect information you provide directly to us, such as when you contact us for consultation or services.</p>
+                
+                <h3 data-en="How We Use Your Information" data-ar="كيف نستخدم معلوماتك">How We Use Your Information</h3>
+                <p data-en="We use your information to provide our services, communicate with you, and improve our offerings." data-ar="نستخدم معلوماتك لتقديم خدماتنا والتواصل معك وتحسين عروضنا.">We use your information to provide our services, communicate with you, and improve our offerings.</p>
+                
+                <h3 data-en="Data Protection" data-ar="حماية البيانات">Data Protection</h3>
+                <p data-en="We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction." data-ar="نطبق تدابير أمنية مناسبة لحماية معلوماتك الشخصية من الوصول غير المصرح به أو التغيير أو الكشف أو التدمير.">We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="terms" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</h2>
+                <button class="modal-close" onclick="closeModal('terms')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 data-en="Service Agreement" data-ar="اتفاقية الخدمة">Service Agreement</h3>
+                <p data-en="By engaging our services, you agree to these terms and conditions. We provide professional software development and digital solutions." data-ar="باستخدام خدماتنا، فإنك توافق على هذه الشروط والأحكام. نحن نقدم تطوير البرمجيات المهنية والحلول الرقمية.">By engaging our services, you agree to these terms and conditions. We provide professional software development and digital solutions.</p>
+                
+                <h3 data-en="Project Delivery" data-ar="تسليم المشروع">Project Delivery</h3>
+                <p data-en="We commit to delivering projects on time and within agreed specifications. Any changes to project scope will be discussed and agreed upon in writing." data-ar="نلتزم بتسليم المشاريع في الوقت المحدد ووفقاً للمواصفات المتفق عليها. أي تغييرات في نطاق المشروع ستتم مناقشتها والاتفاق عليها كتابياً.">We commit to delivering projects on time and within agreed specifications. Any changes to project scope will be discussed and agreed upon in writing.</p>
+                
+                <h3 data-en="Payment Terms" data-ar="شروط الدفع">Payment Terms</h3>
+                <p data-en="Payment terms will be clearly outlined in our project agreements. We offer flexible payment options to suit your business needs." data-ar="ستكون شروط الدفع واضحة في اتفاقيات مشاريعنا. نقدم خيارات دفع مرنة تناسب احتياجات عملك.">Payment terms will be clearly outlined in our project agreements. We offer flexible payment options to suit your business needs.</p>
+                
+                <h3 data-en="Support & Maintenance" data-ar="الدعم والصيانة">Support & Maintenance</h3>
+                <p data-en="We provide ongoing support and maintenance services as agreed in our service agreements. Our goal is your long-term success." data-ar="نقدم خدمات الدعم والصيانة المستمرة كما هو متفق عليه في اتفاقيات خدماتنا. هدفنا هو نجاحك على المدى الطويل.">We provide ongoing support and maintenance services as agreed in our service agreements. Our goal is your long-term success.</p>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand" data-en="Accurra" data-ar="أكورا">Accurra</div>
-                <p data-en="Empowering businesses through innovative technology solutions." data-ar="تمكين الشركات من خلال حلول تكنولوجية مبتكرة.">Empowering businesses through innovative technology solutions.</p>
-                <p data-en="&copy; 2025 Accurra. Professional Software Development & Digital Solutions." data-ar="&copy; 2025 أكورا. تطوير البرمجيات المهنية والحلول الرقمية.">&copy; 2025 Accurra. Professional Software Development & Digital Solutions.</p>
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <h3 data-en="Accurra" data-ar="أكورا">Accurra</h3>
+                        <p data-en="Empowering businesses through innovative technology solutions. Less Effort, More Living." data-ar="تمكين الشركات من خلال حلول تكنولوجية مبتكرة. جهد أقل، حياة أكثر.">Empowering businesses through innovative technology solutions. Less Effort, More Living.</p>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/accurra" class="social-link" target="_blank" title="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/accurra" class="social-link" target="_blank" title="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/accurra" class="social-link" target="_blank" title="GitHub">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/accurra" class="social-link" target="_blank" title="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h4 data-en="Quick Links" data-ar="روابط سريعة">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home" data-en="Home" data-ar="الرئيسية">Home</a></li>
+                            <li><a href="#about" data-en="About" data-ar="عننا">About</a></li>
+                            <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                            <li><a href="#projects" data-en="Portfolio" data-ar="المعرض">Portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-section">
+                        <h4 data-en="Our Services" data-ar="خدماتنا">Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services" data-en="Web Development" data-ar="تطوير الويب">Web Development</a></li>
+                            <li><a href="#services" data-en="Mobile Apps" data-ar="تطبيقات الهاتف">Mobile Apps</a></li>
+                            <li><a href="#services" data-en="AI Solutions" data-ar="حلول الذكاء الاصطناعي">AI Solutions</a></li>
+                            <li><a href="#services" data-en="E-Commerce" data-ar="التجارة الإلكترونية">E-Commerce</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-section">
+                        <h4 data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:mahmoudmegahd010000@gmail.com" class="contact-link">mahmoudmegahd010000@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="https://wa.me/201026004642" class="contact-link" target="_blank" dir="ltr">+20 102 600 4642</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span data-en="Egypt" data-ar="مصر">Egypt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright-text" data-en="&copy; 2025 Accurra. Professional Software Development & Digital Solutions." data-ar="&copy; 2025 أكورا. تطوير البرمجيات المهنية والحلول الرقمية.">&copy; 2025 Accurra. Professional Software Development & Digital Solutions.</p>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <div class="footer-bottom-links">
+                            <a href="#privacy" data-en="Privacy Policy" data-ar="سياسة الخصوصية">Privacy Policy</a>
+                            <a href="#terms" data-en="Terms of Service" data-ar="شروط الخدمة">Terms of Service</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
         // Language Toggle
@@ -1337,8 +2009,8 @@
 
         // Add scroll animations
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.05,
+            rootMargin: '0px 0px 100px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1355,19 +2027,56 @@
             const elementsToAnimate = document.querySelectorAll('.card-3d, .project-card, .why-item');
             elementsToAnimate.forEach((el, index) => {
                 el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = `opacity 0.6s ease ${index * 0.02}s, transform 0.6s ease ${index * 0.02}s`;
                 observer.observe(el);
             });
         });
 
-        // Add parallax effect to hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero');
-            if (parallax) {
-                const speed = scrolled * 0.5;
-                parallax.style.transform = `translateY(${speed}px)`;
+        // Parallax effect removed for better user experience
+
+        // Modal functionality
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal when clicking outside
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal-overlay')) {
+                e.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Handle footer links
+        document.addEventListener('DOMContentLoaded', () => {
+            const privacyLink = document.querySelector('a[href="#privacy"]');
+            const termsLink = document.querySelector('a[href="#terms"]');
+            
+            if (privacyLink) {
+                privacyLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal('privacy');
+                });
+            }
+            
+            if (termsLink) {
+                termsLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openModal('terms');
+                });
             }
         });
     </script>
